@@ -1,0 +1,19 @@
+package koreano;
+
+public class Main {
+
+	public static void main(String[] args) {
+		String Cosa = "mata";
+		String Cosa2 = "tactu";
+		if (Cosa.equals(Cosa2)) {
+			System.out.println("mata");
+			
+		}else {
+			System.out.println("Sa te fut in gura");
+			System.out.println(Cosa.length()+" lei vrei");
+		}
+		
+
+	}
+
+}

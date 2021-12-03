@@ -1,0 +1,22 @@
+package principal;
+import javax.swing.*;
+import java.awt.*;
+public class Main {
+
+	public static void main(String[] args) {
+		JFrame frame = new JFrame();
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setSize(500,700);
+		frame.setLayout(new GridLayout(1,3,400,400));
+		frame.add(new JButton("<"));
+		JLabel texto1 = new JLabel("Teemo");
+		texto1.setIcon(null);
+		frame.add(new JButton(">"));
+		
+		
+		
+		frame.setVisible(true);
+		
+	}
+
+}

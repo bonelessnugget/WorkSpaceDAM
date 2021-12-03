@@ -1,0 +1,26 @@
+/*Hacer un programa que lea un número N y nos escriba
+ * en la pantalla mediante un mensaje si es o no primo.
+ * (NOTA: Número primo es aquel que es divisible solo por si mismo y la unidad)
+ * 
+ */
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("Introduce el numero: ");
+		int numero = teclado.nextInt();
+		for (int x = 2; x < numero / 2; x++) {
+			if (numero % x == 0) {
+				System.out.println(numero +" no es primo");
+			}else {
+				System.out.println(numero +" es primo");
+				for (int y=2; y < numero / 2; y++) {
+					if (numero % y == 0) {
+						System.out.println(numero);
+					}
+				}
+				
+			} 
+		}
+		}
+	}

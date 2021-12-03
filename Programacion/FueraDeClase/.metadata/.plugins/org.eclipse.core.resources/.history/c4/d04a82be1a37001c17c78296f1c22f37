@@ -1,0 +1,48 @@
+package principal;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+public class Main {
+int vida = 0;
+int ataque = 0;
+int mana = 0;
+	public static void main(String[] args) {
+		JFrame frame = new JFrame();
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setSize(500,700);
+		frame.setLayout(new GridLayout(2,3));
+		JLabel titulo = new JLabel("Elige:");
+		JButton guerrero = new JButton("Guerrero");
+		JButton mago = new JButton("Mago");
+		JButton tirador = new JButton("Tirador");
+		frame.add(titulo);
+		frame.add(guerrero);
+		frame.add(mago);
+		frame.add(tirador);
+		guerrero.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				Guerrero();
+				
+				
+			}
+
+			private void Guerrero() {
+				int vida=500;
+				int ataque=500;
+				int mana=100;
+				JFrame frameGuerrero = new JFrame();
+				frameGuerrero.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+				frameGuerrero.setSize(500,700);
+				frameGuerrero.setVisible(true);
+				
+			}
+			
+		});
+		
+		frame.setVisible(true);
+		
+	}
+
+}

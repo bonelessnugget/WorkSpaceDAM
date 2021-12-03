@@ -1,0 +1,35 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Meses",
+            "request": "launch",
+            "mainClass": "Meses",
+            "projectName": "18-10-2021_6be2a731"
+        },
+        {
+            "type": "java",
+            "name": "Launch Meses",
+            "request": "launch",
+            "mainClass": "Switch.Meses",
+            "projectName": "18-10-2021_6be2a731"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Numeros",
+            "request": "launch",
+            "mainClass": "Numeros",
+            "projectName": "18-10-2021_6be2a731"
+        }
+    ]
+}

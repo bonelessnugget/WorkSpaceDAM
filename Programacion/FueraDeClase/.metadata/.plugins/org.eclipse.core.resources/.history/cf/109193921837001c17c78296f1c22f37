@@ -1,0 +1,16 @@
+package principal;
+import javax.swing.*;
+import java.awt.*;
+public class Main {
+
+	public static void main(String[] args) {
+		JFrame frame = new JFrame();
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setSize(500,700);
+		frame.setLayout(new GridLayout(1,1));
+		JLabel titulo = new JLabel("Elige:");
+		frame.setVisible(true);
+		
+	}
+
+}

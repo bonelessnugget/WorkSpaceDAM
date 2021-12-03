@@ -1,0 +1,71 @@
+package principal;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+public class Main {
+int vida = 0;
+int ataque = 0;
+int mana = 0;
+	public static void main(String[] args) {
+		JFrame frame = new JFrame();
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setSize(500,700);
+		frame.setLayout(new GridLayout(2,3));
+		JLabel titulo = new JLabel("Elige:");
+		JButton guerrero = new JButton("Guerrero");
+		JButton mago = new JButton("Mago");
+		JButton tirador = new JButton("Tirador");
+		frame.add(titulo);
+		frame.add(guerrero);
+		frame.add(mago);
+		frame.add(tirador);
+		guerrero.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				Guerrero();
+				
+				
+			}
+
+			private void Guerrero() {
+				int vida=500;
+				int ataque=100;
+				int mana=100;
+				JFrame frameGuerrero = new JFrame();
+				frameGuerrero.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+				frameGuerrero.setSize(500,700);
+				frameGuerrero.setLayout(new GridLayout(3,3));
+				frameGuerrero.setVisible(true);
+				JLabel inicio = new JLabel("Has elegido el guerro. Tiene 500 vida, 100 ataque y 100 de mana.");
+				frameGuerrero.add(inicio);
+				JButton comenzar = new JButton("Comenzar");
+				frameGuerrero.add(comenzar);
+				comenzar.addActionListener(new ActionListener() {
+
+					@Override
+					public void actionPerformed(ActionEvent e) {
+						inicio();
+						
+						
+					}
+
+					private void inicio() {
+						JFrame inicio = new JFrame();
+						inicio.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+						inicio.setSize(500,700);
+						inicio.setLayout(new GridLayout(3,3));
+						
+					}
+					
+				});
+				
+			}
+			
+		});
+		
+		frame.setVisible(true);
+		
+	}
+
+}

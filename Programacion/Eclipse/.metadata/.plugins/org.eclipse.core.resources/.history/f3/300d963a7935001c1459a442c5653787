@@ -1,0 +1,17 @@
+//Fecha 25-10-2021
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		int numero = 2;
+		boolean hecho = false;
+		while (!hecho) {
+			System.out.println(numero);
+			numero = numero * 2;
+			if (numero > 64)
+				hecho = true;
+		}
+		
+	}
+
+}

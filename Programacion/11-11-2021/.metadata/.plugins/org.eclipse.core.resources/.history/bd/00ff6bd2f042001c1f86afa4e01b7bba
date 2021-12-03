@@ -1,0 +1,23 @@
+package koreano;
+
+public class Main {
+
+	public static void main(String[] args) {
+		String Cosa = "mata";
+		String Cosa2 = "tactu";
+		if (Cosa.equals(Cosa2)) {
+			System.out.println("mata");
+			
+		}else {
+			System.out.println("Sa te fut in gura");
+			System.out.println(Cosa.length()+" lei vrei");
+			System.out.println(Cosa.charAt(2-1));
+			System.out.println(Cosa.compareTo(Cosa2));
+			
+			//먀챠 ㅐ 렷드 ㅔㄷ ㅡㅁㅅㅁ ㅑㅜ 쳑 ㄱ며 ㅇㄷ 샛
+		}
+		
+
+	}
+
+}

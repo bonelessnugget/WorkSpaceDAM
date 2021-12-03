@@ -1,0 +1,14 @@
+package koreano;
+
+public class Main {
+
+	public static void main(String[] args) {
+		String Cosa = "mata";
+		String Cosa2 = "tactu";
+		System.out.println(Cosa);
+		Cosa.equals(Cosa2);
+		
+
+	}
+
+}
